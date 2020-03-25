@@ -17,7 +17,7 @@
     "ava": "^3.5.1",
     "jsdom": "^16.2.1",
     "rollup": "^2.1.0",
-    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "standard": "^14.3.1"
   },
