@@ -18,7 +18,7 @@
     "jsdom": "^16.2.1",
     "rollup": "^2.1.0",
     "rollup-plugin-commonjs": "^9.1.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "standard": "^14.3.1"
   },
   "directories": {
