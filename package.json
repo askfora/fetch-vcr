@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "ava": "^3.5.1",
-    "jsdom": "^16.2.1",
+    "jsdom": "^17.0.0",
     "rollup": "^2.1.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
