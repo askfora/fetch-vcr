@@ -1,12 +1,12 @@
 {
-  "version": "3.0.1",
+  "version": "3.2.0",
   "name": "fetch-vcr",
   "description": "Stop mocking HTTP Requests. Just record and then play them back",
   "main": "./lib/index.js",
-  "type": "module",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "pretest": "./script/clean-for-test",
-    "test": "ava",
+    "test": "npx -r esm ava",
     "debug": "DEBUG=true node --inspect --debug-brk ./node_modules/ava/profile.js ./test/index.js",
     "build-browser": "rollup --config rollup.config.js"
   },
@@ -16,9 +16,10 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
+    "esm": "^3.2.25",
     "jsdom": "^17.0.0",
     "rollup": "^2.1.0",
-    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-commonjs": "^10.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "standard": "^16.0.1"
   },
