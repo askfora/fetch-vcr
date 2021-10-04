@@ -15,7 +15,7 @@ declare module 'fetch-vcr' {
     headers: Record<string, never>;
   }
 
-  inteface Response {
+  interface Response {
     url: string;
     status: number;
     statusText: string;
