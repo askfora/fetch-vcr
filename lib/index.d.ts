@@ -17,7 +17,7 @@ declare module 'fetch-vcr' {
 
   inteface Response {
     url: string;
-    status: string;
+    status: number;
     statusText: string;
     ok: boolean;
     headers: {};
