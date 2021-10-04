@@ -9,9 +9,9 @@ declare module 'fetch-vcr' {
   }
 
   interface Args {
+    body: string:;
     method: string;
     redirect: string;
-    body: any;
     headers: {};
   }
 
