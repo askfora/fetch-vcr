@@ -12,7 +12,7 @@ declare module 'fetch-vcr' {
     body: string:;
     method: string;
     redirect: string;
-    headers: {};
+    headers: Record<string, never>;
   }
 
   inteface Response {
@@ -20,7 +20,7 @@ declare module 'fetch-vcr' {
     status: number;
     statusText: string;
     ok: boolean;
-    headers: {};
+    headers: Record<string, never>;
   }
 
   namespace fetchVCR {
