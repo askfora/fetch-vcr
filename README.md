@@ -157,7 +157,8 @@ In order to save the fixture files to disk you will need to override `fetchVCR.s
 
 If you are using PhantomJS you will likely need to use the `alert(msg)` to get data out of PhantomJS and then save it to the filesystem (using `fs.writeFile(...)`)
 
-
+## Updates
+Stablize hashes (AskFora)
 
 [kanban-image]: https://img.shields.io/github/issues/philschatz/fetch-vcr.svg?label=kanban%20board%20%28gh-board%29
 [kanban-url]: http://philschatz.com/gh-board/#/r/philschatz:fetch-vcr

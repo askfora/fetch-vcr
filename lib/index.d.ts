@@ -7,11 +7,27 @@ declare module 'fetch-vcr' {
     ignoreUrls?: string[];
     headerBlacklist?: string[]
   }
+
+  interface Args {
+    body: string;
+    method: string;
+    redirect: string;
+    headers: Record<string, never>;
+  }
+
+  interface Response {
+    url: string;
+    status: number;
+    statusText: string;
+    ok: boolean;
+    headers: Record<string, never>;
+  }
+
   namespace fetchVCR {
     function configure(config: Config): void;
     function loadFile(root: string, filename: string): Promise<string>;
     function saveFile(root: string, filename: string, buffer: string): Promise<'fetch-saved'>;
-    function getCalled(): void;
+    function getCalled(): {url: string; args: Args; response: Response; hash: string; bodyFilename: string; optionsFilename: string;}[];
     function clearCalled(): void;
   }
   export default fetchVCR;

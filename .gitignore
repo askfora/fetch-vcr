@@ -5,3 +5,6 @@
 
 /browser-bundle.js
 /browser-bundle.js.map
+
+.idea
+*.swp
