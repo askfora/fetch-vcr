@@ -9,7 +9,7 @@ declare module 'fetch-vcr' {
   }
 
   interface Args {
-    body: string:;
+    body: string;
     method: string;
     redirect: string;
     headers: Record<string, never>;
