@@ -16,11 +16,11 @@ test.before(t => {
 })
 
 test('ignores urls in ignoreUrls', t => {
-  return fetchVCR('https://test.com?ignore=true')
+  return fetchVCR('https://askfora.com/msg?message=about&ignore=true')
     .then(response => {
       return response.text()
         .then(text => t.pass())
-    })
+    }).catch(e => console.error(e));
 })
 
 test('fetches from the fixture', t => {
